@@ -13,7 +13,7 @@ export interface FacultyProfile {
   name: string;
   status: string;
   is_paused: boolean;
-  schedule?: string;
+  department?: { name: string };
 }
 
 export interface FacultyAvailability {
@@ -28,4 +28,5 @@ export interface FacultyUnavailableDate {
   id: string;
   faculty_id: string;
   unavailable_date: string;
+  reason?: string;
 }
